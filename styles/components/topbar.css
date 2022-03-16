@@ -1,0 +1,55 @@
+.header{
+    background-color: var(--background-color-1);
+    height:  82px;
+    width: 100%;
+    position: fixed;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+}
+
+.navbar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.searchbar{
+    border-radius: 100rem;
+    margin-left: 50px;
+}
+
+.icons{
+    font-size: 28px;
+    padding-left: 10px;
+}
+
+.icons:hover{
+    transform: scale(1);
+    color: var(--primary-color);
+    transition: 0.2s;
+}
+
+@media only screen and (min-width:600px) {
+    .menuicon{
+        display: none;
+    }
+    .closeicon{
+        display: none;
+        color: var(--font-color);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .searchbar{
+        width: 0;
+        padding: 0;
+        transition: 0.25s;
+    }
+    .menuicon{
+        display: inline;
+    }
+}
